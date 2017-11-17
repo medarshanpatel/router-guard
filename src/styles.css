@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~ng2-toastr/bundles/ng2-toastr.min.css';
+
+.current{
+    color: red;
+    font-weight: bold;
+}

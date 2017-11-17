@@ -1,0 +1,15 @@
+<p>
+  editor works!
+</p>
+<!--<summernote [(ngModel)]="text" [options]="options" [disabled]="disabled"></summernote>-->
+<!--<ng2-summernote [(ngModel)]="data2" height="500"></ng2-summernote>-->
+<div class="row">
+    <div class="col-md-6">
+      <ng2-summernote [(ngModel)]="data" lang="cs-CZ" serverImgUp hostUpload="{{hostUpload}}" uploadFolder="{{uploadFolder}}"></ng2-summernote>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <ng2-summernote [(ngModel)]="data2" height="500" lang="cs-CZ"></ng2-summernote>
+    </div>
+  </div>

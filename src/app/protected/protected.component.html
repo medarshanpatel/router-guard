@@ -1,0 +1,12 @@
+<h1> Protected Component </h1>
+<h4> Welcome, {{email}} </h4>
+
+<div>
+  <a md-raised-button routerLink='/dashboard'><b>Dasboard </b></a>
+  <a md-raised-button routerLink="/users"> <b>Users</b></a>
+  <a md-raised-button routerLink="/summernote"> <b>Summernote</b></a>
+  <a md-raised-button routerLink="/pagination"> <b>Pagination</b></a>
+  <a md-raised-button routerLink="/scroll"> <b>Scroll</b></a>
+  <button md-button (click)="logout()" md-raised-button color="warn">Logout</button>
+</div>
+<router-outlet></router-outlet>

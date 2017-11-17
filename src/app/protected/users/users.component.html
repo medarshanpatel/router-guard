@@ -1,0 +1,47 @@
+
+ <h2>Our users list</h2>
+<div>
+<!--<button md-raised-button color="accent" (click)="onloadGraph()" >Show Graph</button>
+<button md-raised-button color="accent" (click)="showSuccess()" class="btn btn-default">Toastr Tester</button>-->
+<button md-raised-button color="accent" (click)="onloadGraph()" >Show Graph</button>
+<button md-raised-button color="accent" (click)="showSuccess()" class="btn btn-default">Toastr Tester</button>
+</div>
+<br/>
+
+<table border="1">
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Mobile Number</b></td>
+    <td><b>Gender</b></td>
+    <td><b>City</b></td>
+    <td><b>Message</b></td>
+    <td><b>Time</b></td>
+    <td><b>Status</b></td>  
+  </tr>
+  <tr *ngFor="let item of userInfo | async">
+    <td>
+      {{item.val().name}}
+    </td>
+    <td>
+      {{item.val().mobilenumber}}
+    </td>
+    <td>
+      {{item.val().gender}}
+    </td>
+    <td>
+      {{item.val().city}}
+    </td>
+    <td>
+      {{item.val().message}}
+    </td>
+    <td>
+      {{item.val().timestamp | date:'dd-MM-yyyy HH:mm:ss Z'}}
+    </td>
+    <td>
+      {{item.val().status}}
+    </td>
+  </tr>
+</table>
+<br/>
+<div id="showGraph" style="width: 100%; height: 400px;"></div>
+
